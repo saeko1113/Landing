@@ -1,0 +1,278 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --text: hsl(228, 12%, 48%);
+    --pale: hsl(32, 37%, 92%);
+    --green: hsl(158, 36%, 37%);
+    --header-text: hsl(212, 12%, 14%)
+    
+ }
+ 
+ body {
+     background-color: var(--pale);
+ }
+ 
+ * {
+     margin: 0;
+ }
+ 
+ #header-img {
+     width: 69px;
+      object-fit: contain;
+      
+      
+ }
+ 
+ 
+ 
+ 
+ 
+ #nav-bar {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     background-color: var(--white);
+     padding: 10px;
+ 
+ }
+ 
+ .nav-links {
+     display: flex;
+     list-style: none;
+ }
+ 
+ .nav-links a {
+     text-decoration: none;
+     color: var(--text);
+     padding: 0 10px;
+ }
+ 
+ .logo-container {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .the-product {font-size: 25px;
+ margin-left: 10px;
+ font-weight: 700;
+ font-family: "montserrat";
+ }
+ 
+ #email-section {
+     margin-top: 150px;
+ }
+ 
+ 
+ input {padding: 8px;
+         border-radius: 5px;
+         border: 1px solid var(--green);
+ 
+ }
+ 
+ #submit {
+     background-color: var(--green);
+     color: var(--white);
+     cursor: pointer;
+ 
+ }
+ 
+ 
+ 
+ section::before {
+     display: block;
+     content: " ";
+     margin-top: -100px;
+     height: 100px;
+     visibility: hidden;
+     pointer-events: none;
+ }
+ 
+ section {
+     margin: 40px 20px;
+     text-align: center;
+ }
+ h2 {
+     font-size: 2rem;
+     font-family: "fraunces";
+ }
+ 
+ .icon { 
+     color: green;
+     margin-right: 30px;
+     
+ }
+ 
+ #features {
+     text-align: left;
+     max-width: 800px;
+     margin: auto;
+ 
+ 
+ }
+ 
+ .features {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 20px;
+     font-family: "montserrat";
+ }
+ 
+ #video {
+     width: 100%;
+     
+ }
+ 
+ .product-image {
+     width: 100%;
+     margin: auto;
+     padding: 10px;
+     height: 322px;
+     border: 1px solid var(--text);
+     border-radius: 10px 10px 0 0;
+     background-repeat: no-repeat;
+     background-size:contain;
+ }
+ 
+ 
+ .product1 {
+     background-image: url(https://ih1.redbubble.net/image.586570805.8048/ssrco,classic_tee,womens,fafafa:ca443f4786,front_alt,square_product,600x600.u2.jpg);
+ }
+ 
+ .product2 {
+     background-image: url(https://i.pinimg.com/originals/37/8b/6f/378b6f3725075de971c5628d74415aa2.jpg);
+     
+     
+ }
+ 
+ .product3 {
+     background-image: url(https://i5.walmartimages.com/asr/224b61ca-f1d8-438c-9df8-632e18472a2e.473855c24b1e67978b1f947498bd864b.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff);
+     
+ 
+   
+  
+ }
+ 
+ 
+ .card {
+     background-color: var(--white);
+     border-radius: 10px;
+     width: 90%;
+     margin: auto;
+     margin-bottom: 10px;
+ 
+ }
+ 
+ .inner-card {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding: 10px;
+ 
+ }
+ 
+ .content {
+     font-family: "montserrat";
+     color: var(--text);
+     margin-top: 10px;
+ 
+ }
+ 
+ 
+ .flex {
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+ 
+ }
+ 
+ .main-price {
+    margin-right: 20px;
+     font-size: 30px;
+     font-family: "fraunces";
+     color: var(--text)
+ 
+ }
+ 
+ .old-price {
+     text-decoration: line-through;
+     color: var(--text);
+    
+ }
+ 
+ .author {
+     font-family: "montserrat";
+     letter-spacing: 5px;
+     color: var(--text);
+     text-transform: uppercase;
+ 
+ }
+ 
+ 
+ .header {
+     font-family: "fraunces";
+     margin: 10px 0;
+     color: var(--header-text);    
+ }
+ 
+ .add {
+     width: 100px;
+     margin: 0 auto;
+     background-color: var(--green);
+     cursor: pointer;
+     padding: 15px;
+     border: none;
+     border-radius: 10px;
+     color: var(--white);
+     font-weight: 500;
+     font-family: "montserrat";
+     margin-bottom: 10px;
+ }
+ 
+ @media only screen and (min-width: 600px) {
+     #nav-bar {flex-direction: row;
+     
+     }
+ }
+ 
+ @media only screen and (max-width: 768px) {
+ *, body { 
+     max-width: 100%;
+     font-size: .8rem;
+     
+ }
+ .inner-card {
+     margin: auto;
+     height: 200;
+ }
+ 
+ #for-sale {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ }
+ 
+ 
+ @media only screen and (450px <= width) {
+     .card {
+         display: flex;
+         max-width: 525px;
+     }
+ 
+     .inner-card {
+         width: 300px;
+         padding: 20px;
+ 
+     }
+ 
+     .product-image {
+         width: 400px;
+         border-radius: 10px 0 0 10px;
+         
+     }
+ }

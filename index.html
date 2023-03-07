@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+
+  
+
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/originals/51/8f/82/518f82854a1e8e6e4eee0f8439f6ef3b.png" alt="logo" id="header-img"/>
+                <span class="the-product">Red Robin</span>
+            </div>
+                <ul class="nav-links">
+                
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#audio" class="nav-link">Free Audio Book</a></li>
+                    <li><a href="#for_sale" class="nav-link">For Sales</a></li>
+                </ul>
+           
+        </nav>
+    </header>
+
+    <section id="email-section">
+    <h2>Beautifully Woven & Printed Masterpieces</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input id="email" name="email" required placeholder="https://www.freecodecamp.com/email-submit" type="email">
+            <input type="submit" id="submit" value="GET STARTED">
+        </form>
+    </section>  
+    
+    <section id="features">
+        <div class="feature">
+            <i class="ri-file-paper-fill ri-4x icon"></i>
+            <div>
+                <h2>Premium Materials</h2>
+                <p>Our Clothes use the best Fabric which is sourced increase the durability of your purchase.
+                </p>
+            </div>
+        </div>
+        
+        <div class="feature">
+            <i class="ri-truck-fill ri-4x icon">
+            </i>
+            <h2>1 Day Shipping</h2>
+            <p>We make sure you recieve your classic clothe that you can start your fashion desires. We also provide free returns if you are not satisfied.</p>
+        </div>
+        
+            <div class="feature"><i class="ri-shirt-fill ri-4x icon"></i>
+            <h2>Quality Clothes Only</h2>
+            <p>We make sure to only provide awesome classic clothes. We guarabtee that the clothe you buy is one of the top classic clothes on the market and we insure you that we see is what you get.</p>
+            </div>
+            
+    </section>
+    <section id="iframe">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/yxJ2_jYwLko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    
+    <section id="for_sale">
+        <h2>For Sale</h2>
+        <div id="product-cards">
+            <div class="card">
+            <div class="product-image product1"></div>
+            <div class="inner-card">
+                <div class="branch">Cebu Branch</div>
+                
+                <h1 class="header">Red Robin White Bird</h1>
+                <p class="content">Colors: White, Black, Red, Grey </p>
+                    <p class="content">Size: Small, Medium, Large, XL, XLL,</p>
+    <!--PRODUCT 2-->
+                
+                <div id="audio">
+                    <p class="main-price">$10.99</p>
+                    <p class="old-price">$16.99</p>
+                </div>
+                
+                <button class="add">
+                    <p style="margin-left: 5px;"></p>
+                    Add to Cart
+                </button>
+            </div>
+            </div>
+            <div class="card"></div>
+            <div class="card"></div>
+
+            <div class="card">
+                <div class="product-image product2"></div>
+                <div class="inner-card">
+                    <div class="branch">Cebu Branch</div>
+                    
+                    <h1 class="header">Red Robin Shoes</h1>
+                    <p class="content">Colors: White, Black, Red, Grey </p>
+                        <p class="content">All Size Available for Men & Women</p>
+                    
+                    
+                    <div class="flex">
+                        <p class="main-price">$20.12</p>
+                        <p class="old-price">$24.29</p>
+                    </div>
+                    
+                    <button class="add">
+                        <p style="margin-left: 5px;"></p>
+                        Add to Cart
+                    </button>
+                </div>
+                </div>
+
+<!--PRODUCT 3-->
+
+<div class="card">
+    <div class="product-image product3"></div>
+    <div class="inner-card">
+        <div class="branch">Cebu Branch</div>
+        
+        <h1 class="header">Red Robin Hats</h1>
+        <p class="content">Colors: White, Black, Red, Grey </p>
+            <p class="content">Adult Size: Adjustable</p>
+        
+        
+        <div class="flex">
+            <p class="main-price">$10.12</p>
+            <p class="old-price">$12.29</p>
+        </div>
+        
+        <button class="add">
+            <p style="margin-left: 5px;"></p>
+            Add to Cart
+        </button>
+    </div>
+</div>
+        </div>
+    </section>
+</body>
+</html>
